@@ -1,2 +1,2 @@
 # pricing-cards
-A sample of a Web Hosting Service pricings, develope using css flexbox and grid systems.
+A sample of a Web Hosting Service pricings, develop using CSS flexbox and grid systems.
