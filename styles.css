@@ -1,0 +1,128 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLORS: 
+Main Color: #343a40
+Grey Color: #495057
+Accent Color: #2b8a3e
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
+}
+.pricing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  border-radius: 2%;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: auto auto;
+  column-gap: 48px;
+  row-gap: 32px;
+}
+
+.price-table-header {
+  color: #5c636a;
+  font-size: 30px;
+  grid-column: 1/-1;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+img {
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+
+.card-name {
+  color: #454c54;
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card-details {
+  color: #495057;
+  font-size: 18px;
+}
+
+.card-price {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card-currency-symbol {
+  vertical-align: super;
+}
+
+.card-price-tag {
+  color: #16a34a;
+  font-size: 52px;
+  font-weight: 500;
+}
+
+.card-details ul {
+  list-style-type: none;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.card-button > button {
+  background-color: #495057;
+  border: none;
+  border-radius: 200px;
+  color: #e9ecef;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+  width: 50%;
+}
+
+.card-button > button:hover {
+  background-color: rgba(73, 80, 87, 0.9);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1201px) {
+  .main-container {
+    grid-template-columns: auto;
+    /* grid-auto-columns: 1fr; */
+    grid-auto-rows: auto;
+    justify-content: center;
+    max-width: 480px;
+  }
+}
